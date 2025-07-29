@@ -113,12 +113,14 @@ export default function InsuranceCardScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.background,
+    backgroundColor: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   },
   header: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.glass.primaryGlass,
     padding: 20,
     alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.glass.border,
   },
   headerText: {
     color: COLORS.white,
@@ -128,18 +130,23 @@ const styles = StyleSheet.create({
   cardContainer: {
     margin: 20,
     borderRadius: 15,
-    elevation: 5,
-    shadowColor: COLORS.black,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
+    backgroundColor: COLORS.glass.background,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
+    shadowColor: COLORS.glass.shadow,
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.37,
+    shadowRadius: 25,
+    elevation: 8,
   },
   cardHeader: {
-    backgroundColor: COLORS.secondary,
+    backgroundColor: COLORS.glass.secondaryGlass,
     padding: 15,
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
     marginBottom: 15,
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.glass.border,
   },
   cignaLogo: {
     color: COLORS.white,
@@ -201,9 +208,11 @@ const styles = StyleSheet.create({
   benefitInfo: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    backgroundColor: COLORS.lightGray,
+    backgroundColor: COLORS.glass.backgroundLight,
     padding: 15,
     borderRadius: 10,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
   },
   benefitItem: {
     alignItems: 'center',
@@ -221,10 +230,12 @@ const styles = StyleSheet.create({
   instructions: {
     margin: 20,
     padding: 15,
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.glass.backgroundLight,
     borderRadius: 10,
     borderLeftWidth: 4,
     borderLeftColor: COLORS.primary,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
   },
   instructionText: {
     fontSize: 14,

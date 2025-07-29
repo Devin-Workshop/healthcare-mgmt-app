@@ -147,12 +147,14 @@ export default function ClaimsListScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.background,
+    backgroundColor: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   },
   header: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.glass.primaryGlass,
     padding: 20,
     alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.glass.border,
   },
   headerText: {
     color: COLORS.white,
@@ -171,11 +173,14 @@ const styles = StyleSheet.create({
   claimCard: {
     borderRadius: 10,
     marginBottom: 10,
-    elevation: 3,
-    shadowColor: COLORS.black,
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.22,
-    shadowRadius: 2.22,
+    backgroundColor: COLORS.glass.background,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
+    shadowColor: COLORS.glass.shadow,
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.37,
+    shadowRadius: 25,
+    elevation: 8,
   },
   claimHeader: {
     flexDirection: 'row',
@@ -192,6 +197,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 15,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
   },
   statusText: {
     fontSize: 12,

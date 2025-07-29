@@ -53,11 +53,14 @@ const MainTabNavigator = () => {
         tabBarActiveTintColor: COLORS.primary,
         tabBarInactiveTintColor: COLORS.gray,
         tabBarStyle: {
-          backgroundColor: COLORS.white,
-          borderTopColor: COLORS.lightGray,
+          backgroundColor: COLORS.glass.backgroundLight,
+          borderTopColor: COLORS.glass.border,
+          borderTopWidth: 1,
         },
         headerStyle: {
-          backgroundColor: COLORS.primary,
+          backgroundColor: COLORS.glass.primaryGlass,
+          borderBottomWidth: 1,
+          borderBottomColor: COLORS.glass.border,
         },
         headerTintColor: COLORS.white,
         headerTitleStyle: {

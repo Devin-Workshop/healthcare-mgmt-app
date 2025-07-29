@@ -216,9 +216,11 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.black,
   },
   header: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.glass.primaryGlass,
     padding: 20,
     alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.glass.border,
   },
   headerText: {
     color: COLORS.white,
@@ -237,7 +239,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: COLORS.background,
+    backgroundColor: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   },
   permissionText: {
     fontSize: 18,
@@ -294,7 +296,9 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 25,
-    backgroundColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: COLORS.glass.background,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
@@ -350,13 +354,16 @@ const styles = StyleSheet.create({
   actionButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: COLORS.gray,
+    backgroundColor: COLORS.glass.background,
     paddingHorizontal: 30,
     paddingVertical: 15,
     borderRadius: 25,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
   },
   saveButton: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.glass.primaryGlass,
+    borderColor: COLORS.primary,
   },
   actionButtonText: {
     color: COLORS.white,
@@ -365,8 +372,10 @@ const styles = StyleSheet.create({
     marginLeft: 8,
   },
   recentDocuments: {
-    backgroundColor: COLORS.background,
+    backgroundColor: COLORS.glass.backgroundLight,
     padding: 15,
+    borderTopWidth: 1,
+    borderTopColor: COLORS.glass.border,
   },
   recentTitle: {
     fontSize: 16,
@@ -382,9 +391,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 8,
     paddingHorizontal: 10,
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.glass.background,
     borderRadius: 8,
     marginBottom: 5,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
   },
   documentName: {
     fontSize: 14,

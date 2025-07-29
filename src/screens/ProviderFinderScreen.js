@@ -270,12 +270,14 @@ export default function ProviderFinderScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.background,
+    backgroundColor: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   },
   header: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.glass.primaryGlass,
     padding: 20,
     alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.glass.border,
   },
   headerText: {
     color: COLORS.white,
@@ -289,16 +291,18 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   searchContainer: {
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.glass.backgroundLight,
     borderTopWidth: 0,
     borderBottomWidth: 1,
-    borderBottomColor: COLORS.lightGray,
+    borderBottomColor: COLORS.glass.border,
     paddingHorizontal: 15,
     paddingVertical: 10,
   },
   searchInputContainer: {
-    backgroundColor: COLORS.lightGray,
+    backgroundColor: COLORS.glass.background,
     borderRadius: 25,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
   },
   searchInput: {
     fontSize: 16,
@@ -310,11 +314,14 @@ const styles = StyleSheet.create({
   providerCard: {
     borderRadius: 10,
     marginBottom: 10,
-    elevation: 3,
-    shadowColor: COLORS.black,
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.22,
-    shadowRadius: 2.22,
+    backgroundColor: COLORS.glass.background,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
+    shadowColor: COLORS.glass.shadow,
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.37,
+    shadowRadius: 25,
+    elevation: 8,
   },
   providerHeader: {
     flexDirection: 'row',
@@ -390,10 +397,12 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   callButton: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.glass.primaryGlass,
+    borderWidth: 1,
+    borderColor: COLORS.glass.border,
   },
   directionsButton: {
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.glass.backgroundLight,
     borderWidth: 1,
     borderColor: COLORS.primary,
   },
